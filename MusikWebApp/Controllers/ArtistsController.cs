@@ -56,7 +56,7 @@ namespace MusikWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ArtistId,Name")] Artist artist)
+        public async Task<IActionResult> Create([Bind("ArtistId,Name,Albums")] Artist artist)
         {
             if (ModelState.IsValid)
             {
